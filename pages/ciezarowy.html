@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/navbar.css">
+    <style>
+        .element{
+            width:100%;
+            text-justify: auto;
+            display: block;
+        }
+
+        .element > label {
+            font-size: 12px;
+        }
+
+        .element > input,select {
+            height:20px;
+            margin-left: 10px;
+
+        }
+
+        .element > input[type="number"],select{
+            width: 300px;
+            height: 25px;
+        }
+
+        button{
+            width:25%;
+            height:25px;
+            background-color: #02b8ea;
+            border-color:#02b8ea;
+            border-radius: 2px;
+            color:white;
+            font-weight: bold;
+            box-shadow: none;
+            margin-left:37.5%;
+            display: block;
+         
+        }
+        .display{
+            display: flex;
+            justify-content: center;
+        }
+       .PPM, .cel, .BMI{
+        float:left;
+        margin:20px;
+       }
+       .display > .PPM > p, .display > .cel > p, .display > .BMI > p{
+        text-align: center;
+       }
+
+       #infoBMI, #infoAim, #infoPPM{
+        font-weight: bold;
+        color: #02b8ea;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">strona główna</a></li>
+                <li><a href="kalistenika.html">Konsultacje</a></li>
+                <li><a href="ciezarowy.html">kalkulator</a></li>
+                <li><a href="suplementacja.html">suplementacja</a></li>
+            </ul>
+        </div>
+        <div class="main">
+
+            <div class="calc">
+            <div class="element"><label>Płeć </label>
+                <input type="radio" name="plec" value="mężczyzna" />mężczyzna
+                <input type="radio" name="plec" value="kobieta" />kobieta</div><br><br>
+            <div class="element"><label>Waga </label><input type="number" id="weight" ></div> <br>
+            <div class="element"><label>Wiek </label><input type="number" id="age" ></div> <br>
+            <div class="element"><label>Wzrost</label><input type="number" id="height" ></div> <br>
+           <div class="element"> <label for="aktywność">Aktywność</label>
+            <select name="aktywność" id="aktywnosc">
+                <option value="siedzacy">siedzący tryb życia</option>
+                <option value="malo">trening 1-2 razy w tygodniu</option>
+                <option value="srednio">trening 2-4 razy w tygodniu</option>
+                <option value="duzo">trening 5-7 razy w tygodniu</option>
+            </select>
+            </div><br>
+            <div class="element justuj"><label>Cel diety </label><br>
+                <input type="radio" class="check"name="cel" value="utrzymanie" /><label class="descript">utrzymanie</label> 
+                <input type="radio" class="check" name="cel" value="zmniejszenie" /><label  class="descript">zmniejszenie masy </label>
+                <input type="radio" class="check"  name="cel" value="zwiekszenie" /><label  class="descript">zwiększenie masy</label> </div><br><br>
+            <button id="calculate" class="calculate">oblicz</button>
+        </div>
+        <div class="display">
+            <div class="BMI">
+                <p>Współcznynnik BMI</p>
+                <hr>
+                <p id="infoBMI">------</p>
+            </div>
+            <div class="PPM">
+                <p>Twoje zapotrzebowanie kaloryczne</p>
+                <hr>
+                <p id="infoPPM">------</p>
+            </div>
+            <div class="cel">
+                <p>zapotrzebowanie by osiągnąć cel</p>
+                <hr>
+                <p id="infoAim">------</p>
+            </div>
+        </div>
+           
+        </div>
+    </div>
+    </div>
+    <script src="../javaScript/repmax.js"></script>
+</body>
+</html>
