@@ -3,7 +3,7 @@
 .article{
     height:300px;
     width:270px;
-    border-radius: 25px;
+    border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     float:left;    
     margin-left: 5%;
@@ -45,6 +45,7 @@
     width:300px;
     float:left;
     margin-left:10%;
+    border:none;
 }
 
 .imageCard > p {
@@ -55,7 +56,7 @@
 
 .imageCard > .back > a { 
     text-decoration: none;
-    color: #007bff;;
+    color: #dc3545;
 }
 
 .imageCard > .back {
@@ -70,6 +71,21 @@
     display:flex;
     padding-top:10%;
     padding-left: 3%;
+}
+.back  { 
+   
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #dc3545;
+        color: #dc3545;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        height: 30px;
+        padding: 2px 24px;
+        text-align: center;
+      
 }
 
 button {

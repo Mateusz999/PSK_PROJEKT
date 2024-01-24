@@ -8,6 +8,7 @@
      
 </head>
 <body>
+  
     <div class="container">
         <div class="navbar">
             <ul>
@@ -18,8 +19,8 @@
 
             </ul>
         </div>
-
-        <div class="main">
+      
+        <div id="main" class="main">
     
 
 
@@ -36,7 +37,7 @@
                     <li>czas na pytania i odpowiedzi</li>
                     <li>podsumowanie konsultacji (po spotkaniu, drogą mailową): zalecenia, narzędzia do samodzielnej pracy oraz ewentualna suplementacja</li>
                 </ul>
-                <button >Zapisz się</button>
+                <button  id="openModal" >Zapisz się</button>
 
             </div>
 
@@ -53,11 +54,55 @@
                     <li>czas na pytania i odpowiedzi</li>
                     <li>podsumowanie konsultacji (po spotkaniu, drogą mailową): zalecenia, narzędzia do samodzielnej pracy oraz ewentualna suplementacja</li>
                 </ul>
-                <button >Zapisz się</button>
+                <button id="openModall" >Zapisz się</button>
             </div>
 
         </div>
-      
+      </div>
+      <div id="modal" class="modal">
+        <p id="informacja" class="informacja"></p>
+        <div class="mail"><label>email</label><input type="text"></div>
+        <button id="send" class="modalButton">wyślij</button>
+        <button id="closeModal" class="closeModal">zamknij</button>
     </div>
+    <script>
+        const openModal = document.getElementById("openModal");
+        const openModall = document.getElementById("openModall");
+        const closeModal = document.getElementById("closeModal");
+        const sendModal = document.getElementById("send");
+        const infoModal = document.getElementById("informacja");
+        
+        openModal.addEventListener("click",()=>{
+            document.getElementById("modal").style.display="block";
+            document.getElementById("main").style.opacity="0.3";
+        })
+        openModall.addEventListener("click",()=>{
+            document.getElementById("modal").style.display="block";
+           document.getElementById("main").style.opacity="0.3";
+        })
+        closeModal.addEventListener("click",()=>{
+            document.getElementById("modal").style.display="none";
+            document.getElementById("main").style.opacity="1";
+        })
+
+        sendModal.addEventListener("click",()=>{
+            infoModal.innerHTML = "Wiadomość została wysłana na maila";
+            
+            setTimeout(()=>{
+                document.getElementById("modal").style.display="none";
+                document.getElementById("main").style.opacity="1";
+            infoModal.innerHTML = "";
+            },1000)
+        })
+        let modal = document.getElementById("main");
+        window.onclick = (event)=> {
+  if (event.target == modal) {
+    document.getElementById("modal").style.display="none";
+    document.getElementById("main").style.opacity="1";
+  }
+}
+
+
+    </script>
 </body>
 </html>

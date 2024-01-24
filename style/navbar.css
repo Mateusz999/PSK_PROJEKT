@@ -54,3 +54,111 @@ body {
 h2, .calc{
     text-align: center;
 }
+h1{
+    text-align: center;
+}
+.home > img, .about > img, .services> img{
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width:300px;
+    height:200px;
+    margin: 0px 10px 0px 10px;
+    
+}
+.home > h3, .about > h3, .services > h3{
+   text-align: center;
+   font-weight: bold;
+    color: #02b8ea;
+    margin: 20px 20px 20px 20px;
+}
+.home, .about, .services{
+    height: 350px;
+    width:30%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px 20px 20px 20px;
+    
+    padding: 1%;
+    clear: both;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+}
+
+.home > img, .about > img , .services > img{
+    width:100px;
+    height:100px;
+    margin-left:37%;
+}
+
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background-color: #f2f2f2;
+   padding-top:15px;
+    text-align: center;
+}
+
+.content{
+    width:100%;
+    height:100%;
+    display:inline-flex;
+    justify-content: center;
+}
+/* kalkulator*/
+
+.element{
+    width:100%;
+    text-justify: auto;
+    display: block;
+}
+
+.element > label {
+    font-size: 12px;
+}
+
+.element > input,select {
+    height:20px;
+    margin-left: 10px;
+
+}
+
+.element > input[type="number"],select{
+    width: 300px;
+    height: 25px;
+}
+
+.main > button{
+    width:25%;
+    height:25px;
+    background-color: #02b8ea;
+    border-color:#02b8ea;
+    border-radius: 2px;
+    color:white;
+    font-weight: bold;
+    box-shadow: none;
+    margin-left:37.5%;
+    display: block;
+ 
+}
+.display{
+    display: flex;
+    justify-content: center;
+}
+.PPM, .cel, .BMI{
+float:left;
+margin:20px;
+}
+.display > .PPM > p, .display > .cel > p, .display > .BMI > p{
+text-align: center;
+}
+
+#infoBMI, #infoAim, #infoPPM{
+font-weight: bold;
+color: #02b8ea;
+}
+

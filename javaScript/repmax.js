@@ -1,20 +1,18 @@
-let plec =document.getElementsByName("plec");
-let cel =document.getElementsByName("cel");
-let aktywnosc = document.getElementById("aktywnosc");
-let weight = document.getElementById("weight");
-let height = document.getElementById("height");
-let age = document.getElementById("age");
-let  selectedOption =  document.querySelector('#aktywnosc option:checked');  
-let plecValue;
-let celValue;
-let aktywnoscValue;
-let result =0;
-let addCalories;
+const plec =document.getElementsByName("plec");
+const cel =document.getElementsByName("cel");
+const aktywnosc = document.getElementById("aktywnosc");
+const weight = document.getElementById("weight");
+const height = document.getElementById("height");
+const age = document.getElementById("age");
 const infoPPM = document.getElementById("infoPPM");
 const infoAim = document.getElementById("infoAim");
 const infoBMI = document.getElementById("infoBMI")
 let reduction;
 let mass;
+let plecValue;
+let celValue;
+let result =0;
+let addCalories;
 
 const calculate = document.getElementById("calculate").addEventListener("click", ()=>{
     
@@ -25,14 +23,13 @@ const calculate = document.getElementById("calculate").addEventListener("click",
       if(cel[i].checked)  celValue = cel[i].value;
     }
 
-    for(i=0;i<4;i++){
-      if(aktywnosc[i].checked)  aktywnoscValue = aktywnosc[i].value;
-    }
-      if(selectedOption.value == "siedzacy") addCalories = 1.4;
-      if(selectedOption.value == "malo") addCalories = 1.6;
-      if(selectedOption.value == "srednio") addCalories =1.8;
-      if(selectedOption.value == "duzo") addCalories = 2;
-   
+    const con = document.querySelector('#aktywnosc option:checked'); 
+    
+      if(con.value == "siedzacy") addCalories = 1.4;
+      else if(con.value == "malo") addCalories = 1.6;
+      else if(con.value == "srednio") addCalories =1.8;
+      else if(con.value == "duzo") addCalories = 2;
+
         if(plecValue == 'kobieta'){
             result = (9.5*weight.value) + (1.8*height.value) + (4.6*age.value) +655;
             result=result*addCalories;
