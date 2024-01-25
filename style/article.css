@@ -54,16 +54,9 @@
  margin-left:5%;
 }
 
-.imageCard > .back > a { 
-    text-decoration: none;
-    color: #dc3545;
-}
 
-.imageCard > .back {
 
-    margin-left:3%;
-    margin-right:20%;
-}
+
 
 .imageCard > .text{
     width: 350px;
@@ -85,7 +78,12 @@
         height: 30px;
         padding: 2px 24px;
         text-align: center;
-      
+        margin-left:3%;
+        margin-right:20%;  
+}
+
+.back:hover{
+    color:#dc3545;
 }
 
 button {
