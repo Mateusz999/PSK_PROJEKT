@@ -49,8 +49,13 @@ body {
 }
 .navbar > ul > li > a:hover {
     text-decoration: none;
-    color: rgb(159, 136, 136);;
+    color: rgb(159, 136, 136);
+    
 }
+
+
+
+
 h2, .calc{
     text-align: center;
 }

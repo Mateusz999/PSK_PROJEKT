@@ -55,9 +55,6 @@
 }
 
 
-
-
-
 .imageCard > .text{
     width: 350px;
     height:250px;
@@ -107,4 +104,7 @@ button {
     outline: none;
   }
   
-  
+  .navbar > ul > li > .suplementacja {
+    border-bottom: 2px solid rgb(159, 136, 136);
+    color: rgb(159, 136, 136);
+}

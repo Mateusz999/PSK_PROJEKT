@@ -59,3 +59,7 @@ color: #02b8ea;
     color:#007bff;
     font-weight: bold;
 }
+.navbar > ul > li > .kalkulator {
+    border-bottom: 2px solid rgb(159, 136, 136);
+    color: rgb(159, 136, 136);
+}

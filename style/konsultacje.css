@@ -52,18 +52,15 @@ button:hover{
    background-color: white;
    left:31%;
    top:30%;
+   border: 1px solid #02b8ea;
     display:none;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   
-
 }
 
 .modal > .mail> label{
    margin-left: 18%;
    margin-right: 5px;
-    
-
 }
 
 .modal > .mail > input{
@@ -105,4 +102,8 @@ button:hover{
 
 p{
     text-align: center;
+}
+.navbar > ul > li > .edukacja {
+    border-bottom: 2px solid rgb(159, 136, 136);
+    color: rgb(159, 136, 136);
 }
