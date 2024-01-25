@@ -6,11 +6,11 @@ const infoModal = document.getElementById("informacja");
 
 openModal.addEventListener("click",()=>{
     document.getElementById("modal").style.display="block";
-    document.getElementById("main").style.opacity="0.3";
+    document.getElementById("main").style.opacity="0.2";
 })
 openModall.addEventListener("click",()=>{
     document.getElementById("modal").style.display="block";
-   document.getElementById("main").style.opacity="0.3";
+   document.getElementById("main").style.opacity="0.2";
 })
 closeModal.addEventListener("click",()=>{
     document.getElementById("modal").style.display="none";
