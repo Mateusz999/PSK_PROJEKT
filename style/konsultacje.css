@@ -25,6 +25,7 @@ button{
     color: #28a745;
     padding:5px;
     border-radius: 10px;
+    margin-top:50px;
 }
 button:hover{
     background-color: #28a745;
@@ -49,8 +50,8 @@ button:hover{
     height: 350px;
    position:absolute;
    background-color: #f2f2f2;
-   left:470px;
-   top:200px;
+   left:31%;
+   top:30%;
     display:none;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -99,4 +100,8 @@ button:hover{
     text-align: center;
     color: #02b8ea;
     font-weight: bold;
+}
+
+p{
+    text-align: center;
 }

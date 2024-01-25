@@ -1,0 +1,32 @@
+.home > img, .about > img, .services> img{
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width:300px;
+    height:200px;
+    margin: 0px 10px 0px 10px;
+    
+}
+.home > h3, .about > h3, .services > h3{
+   text-align: center;
+   font-weight: bold;
+    color: #02b8ea;
+    margin: 20px 20px 20px 20px;
+}
+.home, .about, .services{
+    height: 350px;
+    width:30%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px 20px 20px 20px;
+    
+    padding: 1%;
+    clear: both;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+}
+
+.home > img, .about > img , .services > img{
+    width:100px;
+    height:100px;
+    margin-left:37%;
+}
