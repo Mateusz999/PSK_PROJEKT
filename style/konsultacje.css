@@ -122,12 +122,12 @@ p{
         margin-bottom:2%;
     }
     .modal{
-        width:450px;
+        width:auto;
     }
     
     
 .mail{
-    margin-right:40%;
+    margin:2% auto;
 }
     
 }
