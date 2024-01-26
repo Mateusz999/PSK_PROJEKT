@@ -18,7 +18,10 @@
     width: 300px;
     height: 25px;
 }
-
+*:before,
+*:after {
+	box-sizing: border-box;
+}
 .main > button{
     width:25%;
     height:25px;
@@ -42,6 +45,7 @@ margin:20px;
 }
 .display > .PPM > p, .display > .cel > p, .display > .BMI > p{
 text-align: center;
+font-size:1.4em;
 }
 
 #infoBMI, #infoAim, #infoPPM{
@@ -62,4 +66,7 @@ color: #02b8ea;
 .navbar > ul > li > .kalkulator {
     border-bottom: 2px solid rgb(159, 136, 136);
     color: rgb(159, 136, 136);
+}
+*{
+    font-size:1vw;
 }

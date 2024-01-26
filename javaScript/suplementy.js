@@ -10,7 +10,7 @@ class addSuplement{
         let element =  `<div class='article'>
         <div class='image'><img src='../public/image/image${i}.jpg' alt=''></div>
         <div class='description'> <p>${this.suplement}</p></div>
-        <button><a href='../public/suplementy/${this.suplement}.html'>czytaj więcej</a></button></div>`;
+        <button class="more"><a href='../public/suplementy/${this.suplement}.html'>czytaj więcej</a></button></div>`;
         document.write(element);
        
     }

@@ -1,31 +1,34 @@
 .jednorazowe, .pakiet{
-    height:520px;
-    width:350px;
-    border-radius: 25px;
+    height:max-content;
+    width:auto;
+    border-radius: 1em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     float:left;    
-    margin-left: 5%;
-    margin-bottom: 5%;
-    justify-content: center;
-
+    margin: 0 auto;
+   position: relative;
+    padding: auto;
+    
+}
+h3{
+    margin:auto;
+    position: relative;
 }
 
 .center{
     text-align: center;
 }
 button{
-    margin: 0;
     position:relative;
-    left:32.5%;
-    margin-bottom: 25px;
-    width:35%;
-    font-size: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left:33%;
+    font-size: 12px;
     background-color: white;
     border: 1px solid #28a745;
     color: #28a745;
     padding:5px;
-    border-radius: 10px;
-    margin-top:50px;
+    border-radius: 5px;
+   font-size: 1em;
 }
 button:hover{
     background-color: #28a745;
@@ -33,7 +36,7 @@ button:hover{
 }
 .blue{
     color:#02b8ea;
-    font-size: 25px;
+    
     font-weight: bold;
 }
 .content{
@@ -48,9 +51,9 @@ button:hover{
 .modal{
     width:650px;
     height: 350px;
-   position:absolute;
+    margin:auto;
    background-color: white;
-   left:31%;
+   position: relative;
    top:30%;
    border: 1px solid #02b8ea;
     display:none;
@@ -74,21 +77,22 @@ button:hover{
 
 .modalButton{
     color:black;
-    width:100px;
-    margin-left: -20%;
-    margin-top: 100px;
+    width:80px;
+    position: relative;
+    margin: auto;
+    margin-left:13%;
 }
 .closeModal{
     color:black;
-    width:100px;
-   
+    width:80px;
+    position: relative;
+    margin: auto;
     border: 1px solid red;
     margin-left: 45%;
     margin-top: 100px;
 }
 .closeModal:hover{
     color:white;
-    width:100px;
     background-color:red;
     border: 1px solid red;
     margin-left: 45%;
@@ -102,8 +106,17 @@ button:hover{
 
 p{
     text-align: center;
+    font-size: 1.2em;
 }
 .navbar > ul > li > .edukacja {
     border-bottom: 2px solid rgb(159, 136, 136);
     color: rgb(159, 136, 136);
+}
+*{
+    font-size:1vw;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
 }

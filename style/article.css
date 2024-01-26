@@ -5,33 +5,48 @@
     width:270px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    float:left;    
-    margin-left: 5%;
-    margin-bottom: 5%;
-    justify-content: center;
-}
+    float:left;
+    margin:auto;
+    margin-bottom: 3%;
 
+    
+}
+.main{
+    width:100%;
+    height:100%;
+      display: flex;
+  flex-wrap: wrap;
+}
 .article > button {
     content: 'czytaj więcej';
     margin-top:13%;
-    margin-left: 28%;
+    margin-left: 35%;
+    margin-right: 35%;
+    height: auto;
+    font-size: 1.3rem;
+    
 }
-
+h2{
+    
+    margin:auto;
+}
 .article > .description > p {
     text-align: center;
 }
 .article > .image > img {
-    margin-left: 21%;
+    margin-left: 25%;
     margin-top: 8%;
-    width: 150px;
-    height: 150px;
-    display: flex;
+    width: 125px;
+    height: 125px;
+    
 }
 
 
 .article > button > a {
     text-decoration: none;
-    color:#007bff
+    color:#007bff;
+    word-wrap: break-word;
+
 }
 
 /* IMAGECARD SETTINGS*/
@@ -41,42 +56,41 @@
 }
 .imageCard > img {
     margin-top: 10%;
-    height: 300px;
-    width:300px;
+    height: 200px;
+    width:200px;
     float:left;
     margin-left:10%;
     border:none;
 }
 
-.imageCard > p {
+.imageCard >.text > p {
  float: left;
  margin-top: 13%;
  margin-left:5%;
+ 
+}
+p{
+    font-size: 1.2rem;
 }
 
-
-.imageCard > .text{
-    width: 350px;
+.imageCard > .text{ 
+    width: auto;
+    padding: auto;
     height:250px;
     display:flex;
     padding-top:10%;
-    padding-left: 3%;
+    margin-right: 20%;
+    
 }
 .back  { 
-   
-        align-items: center;
+
         background-color: #fff;
         border: 1px solid #dc3545;
         color: #dc3545;
-        border-radius: 8px;
-        box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
-        box-sizing: border-box;
         cursor: pointer;
         height: 30px;
-        padding: 2px 24px;
-        text-align: center;
-        margin-left:3%;
-        margin-right:20%;  
+        margin-left:20%;
+       
 }
 
 .back:hover{
@@ -94,6 +108,8 @@ button {
     height: 30px;
     padding: 2px 24px;
     text-align: center;
+
+        
   }
   button:hover {
     background: #F6F9FE;
@@ -107,4 +123,12 @@ button {
   .navbar > ul > li > .suplementacja {
     border-bottom: 2px solid rgb(159, 136, 136);
     color: rgb(159, 136, 136);
+}
+*{
+    font-size:1vw;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
 }

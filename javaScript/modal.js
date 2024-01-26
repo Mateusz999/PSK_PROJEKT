@@ -3,12 +3,17 @@ const openModall = document.getElementById("openModall");
 const closeModal = document.getElementById("closeModal");
 const sendModal = document.getElementById("send");
 const infoModal = document.getElementById("informacja");
+const openModalll = document.getElementById("openModalll");
 
 openModal.addEventListener("click",()=>{
     document.getElementById("modal").style.display="block";
     document.getElementById("main").style.opacity="0.2";
 })
 openModall.addEventListener("click",()=>{
+    document.getElementById("modal").style.display="block";
+   document.getElementById("main").style.opacity="0.2";
+})
+openModalll.addEventListener("click",()=>{
     document.getElementById("modal").style.display="block";
    document.getElementById("main").style.opacity="0.2";
 })
