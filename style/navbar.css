@@ -23,9 +23,7 @@ body {
 }
 
 
-    .navbar{
-        position: flex;
-    }
+
  
 
  @media (max-width:1000px) {
