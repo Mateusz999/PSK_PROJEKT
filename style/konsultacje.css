@@ -123,11 +123,13 @@ p{
     }
     .modal{
         width:auto;
+       
     }
     
     
 .mail{
     margin:2% auto;
+    margin-right:30%;
 }
     
 }
