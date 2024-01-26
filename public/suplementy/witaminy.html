@@ -14,15 +14,18 @@
     <div class="container">
         <div class="navbar">
             <ul>
-                <li><a href="../../pages/index.html">strona główna</a></li>
-                <li><a href="../../pages/edukacja.html">edukacja</a></li>
-                <li><a href="../../pages/kalkulator.html">kalkulator</a></li>
-                <li><a href="../../pages/suplementacja.html">suplementacja</a></li>
+                <li class="burger">
+                   <a id="hamburger">|||</a>
+                </li>
+                <li class="hide hide-expanded"> <a class="glowna" href="../../pages/index.html">strona główna</a></li>
+                <li class="hide hide-expanded"><a class="edukacja" href="../../pages/edukacja.html">edukacja</a></li>
+                <li class="hide hide-expanded"><a class="kalkulator" href="../../pages/kalkulator.html">kalkulator</a></li>
+                <li class="hide hide-expanded"><a class="suplementacja" href="../../pages/suplementacja.html">suplementacja</a></li>
 
             </ul>
         </div>
         <div class="main">
-            <h2>Witaminy i minerały</h2>
+    
         </div>
       
     </div>
@@ -33,10 +36,8 @@
             <div class="text"><p class="description">Witamina B3 (PP, niacyna, kwas nikotynowy) pełni bardzo ważną funkcję w organizmie człowieka. Jest odpowiedzialna za prawidłowe funkcjonowanie układu nerwowego oraz hormonalnego. Według naukowców wpływa między innymi na poprawę odporności oraz może dodawać pewności siebie i obniżać poziom lęku.</p></div>
             <button class="back" onclick="window.location.href='../../pages/suplementacja.html'">powrót</button>
         </div>
+        <script src="../../javaScript/hamburger.js"></script>
 
-        <footer>
-            © 2024 Mateusz Biernat, Doktor Dietetyki. Wszelkie prawa zastrzeżone.
-            Polityka prywatności | Regulamin
-        </footer>
+
 </body>
 </html>

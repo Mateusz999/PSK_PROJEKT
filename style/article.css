@@ -6,9 +6,9 @@
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     float:left;
-    margin:auto;
-    margin-bottom: 3%;
-
+    margin:  20px auto;
+    
+    padding:10px 10px 10px 10px;
     
 }
 .main{
@@ -20,14 +20,17 @@
 .article > button {
     content: 'czytaj więcej';
     margin-top:13%;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 25%;
+    margin-right:25%;
+    
     height: auto;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
+    float:right;
+    
     
 }
 h2{
-    
+    padding-top:20px;
     margin:auto;
 }
 .article > .description > p {
@@ -49,6 +52,7 @@ h2{
 
 }
 
+
 /* IMAGECARD SETTINGS*/
 .imageCard{
     width:100%;
@@ -63,12 +67,6 @@ h2{
     border:none;
 }
 
-.imageCard >.text > p {
- float: left;
- margin-top: 13%;
- margin-left:5%;
- 
-}
 p{
     font-size: 1.2rem;
 }
@@ -79,17 +77,22 @@ p{
     height:250px;
     display:flex;
     padding-top:10%;
-    margin-right: 20%;
+
     
 }
 .back  { 
-
+        margin-top:30%;
         background-color: #fff;
         border: 1px solid #dc3545;
         color: #dc3545;
         cursor: pointer;
         height: 30px;
-        margin-left:20%;
+        margin-right: 10%;
+        float:right;
+        position:relative;
+     
+      
+   
        
 }
 
@@ -123,12 +126,4 @@ button {
   .navbar > ul > li > .suplementacja {
     border-bottom: 2px solid rgb(159, 136, 136);
     color: rgb(159, 136, 136);
-}
-*{
-    font-size:1vw;
-}
-
-*:before,
-*:after {
-	box-sizing: border-box;
 }

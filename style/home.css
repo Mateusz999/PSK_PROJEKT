@@ -20,7 +20,7 @@
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin:1vh 1vh 1vh 1vh;
-    font-size:1vw;
+    
      padding: 1em 1em 1em 1em;
     text-align: justify;
 }
@@ -51,6 +51,13 @@
     position: flex;
     float:left;
 }
-*{
-    font-size:1vw;
+
+@media (max-width:400px) {
+   .content > .home p, .about > p, .services > p{
+        font-size: 35px;
+    }
+}
+.content > .home p, .about > p, .services > p{
+    font-size: 1em;
+    margin:auto;
 }

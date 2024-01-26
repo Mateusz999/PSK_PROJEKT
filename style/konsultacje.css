@@ -3,10 +3,10 @@
     width:auto;
     border-radius: 1em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    float:left;    
-    margin: 0 auto;
+
    position: relative;
     padding: auto;
+    margin:10px 10px 10px 10px;
     
 }
 h3{
@@ -22,13 +22,12 @@ button{
     margin: auto;
     margin-top: 20px;
     margin-left:33%;
-    font-size: 12px;
     background-color: white;
     border: 1px solid #28a745;
     color: #28a745;
     padding:5px;
     border-radius: 5px;
-   font-size: 1em;
+
 }
 button:hover{
     background-color: #28a745;
@@ -39,10 +38,7 @@ button:hover{
     
     font-weight: bold;
 }
-.content{
-    width:100%;
-    height:100%;
-}
+
 .main{
     padding-top:20px;
     display: flex;
@@ -52,10 +48,10 @@ button:hover{
     width:650px;
     height: 350px;
     margin:auto;
-   background-color: white;
-   position: relative;
-   top:30%;
-   border: 1px solid #02b8ea;
+    background-color: white;
+    position: relative;
+    top:30%;
+    border: 1px solid #02b8ea;
     display:none;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -72,7 +68,6 @@ button:hover{
     height:25px;
    border-radius: 5px;
    border: 1px solid black;
-   border-radius: 5px;
 }
 
 .modalButton{
@@ -104,19 +99,14 @@ button:hover{
     font-weight: bold;
 }
 
-p{
-    text-align: center;
-    font-size: 1.2em;
-}
+
 .navbar > ul > li > .edukacja {
     border-bottom: 2px solid rgb(159, 136, 136);
     color: rgb(159, 136, 136);
 }
-*{
-    font-size:1vw;
-}
-*,
-*:before,
-*:after {
-	box-sizing: border-box;
+
+
+p{
+    font-size:1em;
+   
 }

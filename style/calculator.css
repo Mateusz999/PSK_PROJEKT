@@ -67,6 +67,13 @@ color: #02b8ea;
     border-bottom: 2px solid rgb(159, 136, 136);
     color: rgb(159, 136, 136);
 }
-*{
-    font-size:1vw;
-}
+
+@media (max-width:1000px) {
+    .display{
+        display: block;
+    }
+    .PPM, .cel, .BMI{
+        margin-left:10%;
+        width:80%;
+        }
+    }
