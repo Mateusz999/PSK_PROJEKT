@@ -77,7 +77,7 @@ button:hover{
     width:80px;
     position: relative;
     margin: auto;
-    margin-left:13%;
+    margin-left:18%;
 }
 .closeModal{
     color:black;
@@ -85,15 +85,16 @@ button:hover{
     position: relative;
     margin: auto;
     border: 1px solid red;
-    margin-left: 45%;
+    margin-left: 32%;
     margin-top: 100px;
+    margin-right:7%;
 }
 .closeModal:hover{
     color:white;
     background-color:red;
     border: 1px solid red;
-    margin-left: 45%;
-    margin-top: 100px;
+
+
 }
 .modal > p{
     text-align: center;
@@ -122,14 +123,15 @@ p{
         margin-bottom:2%;
     }
     .modal{
-        width:auto;
+        width:400px;
        
     }
     
     
 .mail{
-    margin:2% auto;
-    margin-right:30%;
+ 
+    margin-right:80%;
+
 }
     
 }
